@@ -1,0 +1,187 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  vertical-align: top;
+}
+
+/*  */
+body {
+  font-family: sans-serif;
+  font-weight: 700;
+}
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: lighter;
+  font-size: 40px;
+}
+.welcome-section {
+  position: absolute;
+  width: 100%;
+  height: 9500px;
+  top: -500px;
+  left: 0;
+  z-index: 10;
+  overflow: hidden;
+  background-color: #484882;
+  /* transition: all 1s; */
+}
+
+.intro_BG {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.content-wrap {
+  position: absolute;
+  width: 100%;
+  height: 600px;
+  /* border: 1px solid blue; */
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  transition: all 1s;
+}
+.fly-in-text {
+  list-style: none;
+  width: 531px;
+  height: 333px;
+  /* height: 600px; */
+  /* border: 1px solid red; */
+  position: relative;
+  top: 50%;
+  left: 53%;
+  animation: goBike 1.5s 1;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  transform: scale(0.5);
+  opacity: 1;
+  /* transition: all 1s; */
+}
+
+@keyframes goBike {
+  0% {
+    /* opacity: 0; */
+    left: 20%;
+    /* filter: blur(20); */
+  }
+
+  100% {
+    left: 53%;
+
+    filter: blur(20);
+  }
+}
+.fly-in-text li {
+  /* border: 1px solid gold; */
+  position: absolute;
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 5em;
+  color: #fff;
+  opacity: 1;
+  /* transition: all 3s ease; */
+}
+
+.fly-in-text li:nth-child(1) {
+  top: 45%;
+  left: 1%;
+  transform: translate(100%, -50%);
+}
+
+.fly-in-text li:nth-child(2) {
+  top: 20%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.fly-in-text li:nth-child(3) {
+  top: 45%;
+  right: -3%;
+  transform: translate(-50%, -50%);
+}
+
+.fly-in-text li:nth-child(5) {
+  margin-right: 0;
+}
+.enter-button {
+  display: block;
+  text-align: center;
+  font-size: 1em;
+  text-decoration: none;
+  color: #adff2f;
+  opacity: 1;
+  transition: all 1s ease 3s;
+}
+/* .content-hidden .fly-in-text li,
+.content-hidden .enter-button {
+  opacity: 0;
+} */
+
+.li1 {
+  transform-origin: center;
+  animation: intro_bikeRide 3s ease-out infinite;
+}
+
+@keyframes intro_bikeRide {
+  0% {
+    transform-origin: center;
+    transform: rotate(0) translate(100%, -50%);
+  }
+
+  100% {
+    transform-origin: center;
+    transform: rotate(360deg) translate(-100%, -50%);
+  }
+}
+
+.li3 {
+  transform-origin: center;
+  animation: intro_bikeRide 3s ease-out infinite;
+}
+
+@keyframes intro_bikeRide {
+  0% {
+    transform-origin: center;
+    transform: rotate(0);
+  }
+
+  100% {
+    transform-origin: center;
+    transform: rotate(360deg);
+  }
+}
+
+#myText {
+  position: absolute;
+  top: 15%;
+  left: -90%;
+  transform: translate(-50%, -50%);
+  font-size: 140px;
+  color: #18a03c;
+  width: 1000px;
+  z-index: 10;
+  text-align: center;
+  /* background-color: red; */
+}

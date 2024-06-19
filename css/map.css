@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  vertical-align: top;
+}
+
+/* 스타일 */
+#wrap {
+  min-width: 1024px;
+}
+
+#header {
+  top: 0;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#maper {
+  width: 100%;
+}
+
+#searchMap {
+  width: 1024px;
+  margin: 0 auto;
+  margin-top: 200px;
+  text-align: center;
+  /* background-color: red; */
+}
+
+#searchMap > p {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 90px;
+  color: black;
+}
+
+#searchMap > h4 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #00b451;
+}
+
+#map {
+  width: 500px;
+  height: 400px;
+  margin: 0 auto;
+  border: 3px solid black;
+  z-index: 0;
+}
+
+#mapButton {
+  width: 150px;
+  height: 50px;
+  background-color: #3a4e75;
+  text-align: center;
+  color: white;
+  line-height: 50px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 150px;
+  cursor: pointer;
+}

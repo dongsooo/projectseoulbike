@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>서울자전거 따릉이</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/6f28eeda7c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="./img/favicon.ico" />
+    <link rel="stylesheet" href="css/login.css" />
+    <style>
+      @font-face {
+        font-family: "돋움";
+        src: url(/font/gulim.ttc);
+      }
+
+      @font-face {
+        font-family: "견고딕";
+        src: url(font/H2GTRE.TTF);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <article id="loginBG">
+        <section id="loginWrap">
+          <form action="">
+            <h4>로그인</h4>
+            <span class="fa-solid fa-xmark logCnCl"></span>
+            <div class="form_group">
+              <label for="id"
+                >아이디
+                <input type="text" id="id" />
+              </label>
+            </div>
+            <div class="form_group">
+              <label for="pw"
+                >비밀번호
+                <input type="text" id="pw" />
+              </label>
+            </div>
+            <div class="form_group">
+              <button>로그인</button>
+            </div>
+            <div class="menu">
+              <a href="">가입하기</a>
+              <a href="">비밀번호를 잊어버리셨나요?</a>
+            </div>
+          </form>
+        </section>
+      </article>
+    </div>
+
+    <script src="js/login.js"></script>
+  </body>
+</html>

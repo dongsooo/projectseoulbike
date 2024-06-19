@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>서울자전거 따릉이</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/6f28eeda7c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="./img/favicon.ico" />
+    <link rel="stylesheet" href="css/service.css" />
+    <style>
+      @font-face {
+        font-family: "돋움";
+        src: url(/font/gulim.ttc);
+      }
+
+      @font-face {
+        font-family: "견고딕";
+        src: url(font/H2GTRE.TTF);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <main>
+        <section id="service">
+          <article id="serviceContentBox">
+            <div id="serviceTextBox">
+              <p>
+                부담없는 비용으로 더 길게, 마음 편히<br />
+                이동하고 싶을 때는 따릉이를 이용해보세요!
+              </p>
+              <h4>이용권 종류</h4>
+              <div id="ticketBox">
+                <ul>
+                  <li>
+                    <a href=""
+                      ><img
+                        src="img/service_content1_01.png"
+                        alt="정기권 구매하기"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href=""
+                      ><img
+                        src="img/service_content1_02.png"
+                        alt="일일권 구매하기"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href=""
+                      ><img
+                        src="img/service_content1_03.png"
+                        alt="정기권 선물하기"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href=""
+                      ><img
+                        src="img/service_content1_04.png"
+                        alt="일일권 선물하기"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div id="buyTicketBox">
+              <div id="buyTicketText">
+                <h4>
+                  이용권 구매
+                  <span id="buyTicketExitBtn" class="fa-solid fa-xmark"></span>
+                </h4>
+              </div>
+              <div id="ticketLayout">
+                <div id="useCautionText">
+                  <a href=""
+                    ><span class="fa-solid fa-circle-exclamation"></span>
+                    <p>이용권 사용 안내</p></a
+                  >
+                </div>
+                <div id="explanationText">
+                  <ul>
+                    <li>· 1회 1매씩 구매가 가능합니다.</li>
+                    <li>
+                      · 대여시간은 1시간이며, 정해진 기간동안, 대여 반납이
+                      가능합니다.
+                    </li>
+                    <li>· 초과시 5분마다 추가요금(200원)과금됩니다.</li>
+                    <li>
+                      &nbsp;&nbsp;예시) 기본 초과 1분 ~ 5분 : 200원, 6분 ~ 10분
+                      : 400원
+                    </li>
+                    <li>· 추가요금은 이용권 결제수단으로 자동결제됩니다.</li>
+                  </ul>
+                </div>
+                <div id="ticketSelectBox">
+                  <div id="selectOptionBox">
+                    <p>이용권종류 선택</p>
+                    <form action="#">
+                      <label for="ticket"></label>
+                      <select name="tickets" id="ticket">
+                        <option value="0">이용권을 선택해주세요</option>
+                        <option value="20,000">정기권 구매하기</option>
+                        <option value="2,000">일일권 구매하기</option>
+                        <option value="18,000">정기권 선물하기</option>
+                        <option value="1,800">일일권 선물하기</option>
+                      </select>
+                    </form>
+                    <div id="priceBox">
+                      <span id="cost">0</span>
+                      <p>원</p>
+                    </div>
+                  </div>
+                  <div id="payOptionBox">
+                    <form action="#">
+                      <input
+                        type="radio"
+                        name="chk_info"
+                        value="제로페이"
+                      />제로페이
+                      <input
+                        type="radio"
+                        name="chk_info"
+                        value="신용/체크카드"
+                      />신용/체크카드
+                      <input type="radio" name="chk_info" value="PAYCO" />PAYCO
+                      <br />
+                      <input
+                        type="radio"
+                        name="chk_info"
+                        value="카카오페이"
+                      />카카오페이
+
+                      <input
+                        type="radio"
+                        name="chk_info"
+                        value="휴대폰결제"
+                      />휴대폰결제
+                    </form>
+                  </div>
+                </div>
+                <div id="ticketPayBox">
+                  <p>결제금액</p>
+                  <div>
+                    <ul id="borderBox">
+                      <li>
+                        이용권
+
+                        <span class="pay">0</span>
+                        <span class="wonText">원</span>
+                      </li>
+                      <li>
+                        마일리지
+                        <span>0원</span>
+                      </li>
+                    </ul>
+                    <span class="pay absol1">0</span>
+                    <p class="won absol2">원</p>
+                  </div>
+                  <div id="checkBox" class="checkBox checkBox1">
+                    <input type="checkbox" id="agree" />
+                    <label for="agree"></label>
+                    <p>
+                      추가요금자동결제,환불규정, <a href="">이용약관</a>에
+                      동의하며 결제를 진행합니다
+                      <a href="">(이용권 사용안내)</a>
+                    </p>
+                  </div>
+                  <div id="checkBox" class="checkBox checkBox2">
+                    <input type="checkbox" id="agree2" />
+                    <label for="agree2"></label>
+                    <p>
+                      만 13세 미만의 미성년자가 서비스를 이용하는 경우, 사고
+                      발생 시 보험 적용을 받을 수 없는 등의 불이익을 받으실 수
+                      있습니다.
+                      <br />
+                      <span
+                        >(만 15세 미만의 경우 상법 제732조에 의거하여 사망 보험
+                        적용 불가)</span
+                      >
+                    </p>
+                  </div>
+                  <div id="payButton">결제하기</div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+    <script src="js/service.js"></script>
+  </body>
+</html>

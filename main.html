@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>서울자전거 따릉이</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/6f28eeda7c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="./img/favicon.ico" />
+    <link rel="stylesheet" href="./css/intro.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/story.css" />
+    <link rel="stylesheet" href="./css/techAndSafe.css" />
+    <link rel="stylesheet" href="./css/service.css" />
+    <link rel="stylesheet" href="./css/newsRoom.css" />
+    <link rel="stylesheet" href="css/login.css" />
+
+    <style>
+      @font-face {
+        font-family: "돋움";
+        src: url(/font/gulim.ttc);
+      }
+
+      @font-face {
+        font-family: "견고딕";
+        src: url(font/H2GTRE.TTF);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap" class="clearfix">
+      <nav id="skipnav" class="hidden">
+        <h3>영역별 바로가기</h3>
+        <ul>
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+        </ul>
+      </nav>
+
+      <header id="header">
+        <h3 class="hidden">로그인메뉴 바로가기</h3>
+        <div id="gnbBox">
+          <div id="gnb">
+            <ul>
+              <li><a class="loginBtn" href="">로그인</a></li>
+              <li><a href="">회원가입</a></li>
+              <li><a href="#storyContentBox3">따릉이 타기</a></li>
+              <li class="goMap"><a href="map.html">대여소 조회</a></li>
+              <li>
+                <a href=""><span class="fa-solid fa-globe"></span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="lnbBox">
+          <h3 class="hidden">로고 바로가기</h3>
+          <div id="logo">
+            <h1>
+              <a href="#">
+                <img
+                  class="logoImg1"
+                  src="img/header_logo.png"
+                  alt="상단 로고"
+                />
+                <img
+                  class="logoImg2"
+                  src="img/hover_logo.png"
+                  alt="상단 로고"
+                />
+              </a>
+            </h1>
+          </div>
+          <nav id="lnb">
+            <h3 class="hidden">메인메뉴 바로가기</h3>
+            <ul>
+              <li>
+                <a href="#story">저탄소 이동수단</a>
+                <ul class="sub">
+                  <li><a href="#story">따릉이 이야기</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#techAndSafe">기술과 안전</a>
+                <ul class="sub">
+                  <li><a href="#techAndSafe">따릉이 이용 방법</a></li>
+                  <li><a href="#safeBox">안전수칙</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#service">서비스</a>
+                <ul class="sub">
+                  <li><a href="#serviceTextBox">이용권 구매</a></li>
+                  <li><a href="map.html">대여소 조회</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#newsRoom">뉴스룸</a>
+                <ul class="sub">
+                  <li><a href="#newsRoom">공지사항</a></li>
+                  <li><a href="#newsRoom">문의/FAQ</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <article id="loginBG">
+          <section id="loginWrap">
+            <form action="">
+              <h4>로그인</h4>
+              <span class="fa-solid fa-xmark logCnCl"></span>
+              <div class="form_group">
+                <label for="id"
+                  >아이디
+                  <input type="text" id="id" />
+                </label>
+              </div>
+              <div class="form_group">
+                <label for="pw"
+                  >비밀번호
+                  <input type="text" id="pw" />
+                </label>
+              </div>
+              <div class="form_group">
+                <button>로그인</button>
+              </div>
+              <div class="menu">
+                <a href="">가입하기</a>
+                <a href="">비밀번호를 잊어버리셨나요?</a>
+              </div>
+            </form>
+          </section>
+        </article>
+      </header>
+      <section id="section">
+        <div id="contentWrap">
+          <article id="mainBanner">
+            <div id="imgBox">
+              <img
+                class="mainBannerImg1"
+                src="img/main_banner_BG.png"
+                alt="메인배너배경"
+              />
+              <img
+                class="mainBannerImg2"
+                src="img/main_bannerContent2.png"
+                alt="메인배너그림"
+              />
+              <img
+                class="mainBannerImg3"
+                src="img/main_bannerLight.png"
+                alt="메인배너불빛1"
+              />
+              <img
+                class="mainBannerImg4"
+                src="img/main_bannerLight2.png"
+                alt="메인배너불빛2"
+              />
+            </div>
+            <div id="textBox">
+              <h4 class="mainBannerText1">
+                자전거와 함께하는 건강한 도시,<br />세계적인 자전거 도시 서울
+              </h4>
+              <br />
+              <p class="mainBannerText2">
+                답답한 도시 속에서 따릉이를 통해<br />
+                생활 속 이동의 불편함이 줄어든다면<br />
+                여러분의 시간은 더 많아집니다.<br />
+                따릉이가 만드는<br />
+                새로운 변화를 지금 만나보세요!
+              </p>
+            </div>
+          </article>
+          <div id="titleBox">
+            <h2>
+              누구나 쉽고 편리하게 이용할 수 있는<br />
+              저탄소 이동수단 서울자전거 <span>따릉이</span>
+            </h2>
+          </div>
+          <article id="main_contentBox">
+            <div id="content1Box">
+              <div id="content1">
+                <img src="img/main1_bg.png" alt="첫번째메인배경" />
+                <img src="img/main_content1_part3.png" alt="첫번째메인이미지" />
+                <img src="img/main_content1_part1.png" alt="첫번째메인이미지" />
+                <img src="img/main_content1_part2.png" alt="첫번째메인이미지" />
+              </div>
+              <div id="content1TextBox">
+                <h4>어디에나 자유롭게 반납해요</h4>
+                <br />
+                <p>
+                  어플을 통해 대여소 조회를 할 수 있어서<br />
+                  반납할 장소를 찾아 헤맬 필요 없어요.<br />
+                  서비스 지역 내에선 원하는 곳<br />
+                  어디에서나 자유롭게 반납하시면 돼요.
+                </p>
+              </div>
+            </div>
+            <div id="content2Box">
+              <div id="content2">
+                <img src="img/main1_bg.png" alt="두번째메인배경" />
+                <img src="img/main_content2_part1.png" alt="두번째메인이미지" />
+                <img src="img/main_content2_part2.png" alt="두번째메인이미지" />
+              </div>
+              <div id="content2TextBox">
+                <h4>
+                  서울시의 기술력이 더해진<br />
+                  새로운 자전거.
+                </h4>
+                <br />
+                <p>
+                  작은 힘으로 언덕도 거뜬하게 올라갈 수 있어요. <br />
+                  작은 힘으로 더 멀리, 스마트락으로 <br />
+                  더 안전하게 따릉이를 이용해보세요.
+                </p>
+              </div>
+            </div>
+            <div id="content3Box">
+              <div id="content3">
+                <img src="img/main1_bg.png" alt="세번째메인배경" />
+                <img src="img/main_content3_part2.png" alt="세번째메인이미지" />
+                <img src="img/main_content3_part1.png" alt="세번째메인이미지" />
+              </div>
+              <div id="content3TextBox">
+                <h4>가격 부담 없이 마음 편히 <br />이용하는 일반 자전거.</h4>
+                <br />
+                <p>
+                  부담없는 비용으로<br />
+                  더 길게, 마음 편히 이동하고 싶을 때는<br />
+                  따릉이를 이용해보세요!
+                </p>
+              </div>
+            </div>
+
+            <div id="content4Box">
+              <div id="content4">
+                <img src="img/main1_bg.png" alt="네번째메인배경" />
+                <img src="img/main_content4_part1.png" alt="네번째메인이미지" />
+                <img src="img/main_content4_part2.png" alt="네번째메인이미지" />
+              </div>
+              <div id="content4TextBox">
+                <h4>
+                  따릉이 어플로 자전거를<br />
+                  탐색하고 이용해요.
+                </h4>
+                <br />
+                <p>
+                  따릉이 어플을 통해 지도 화면에서<br />
+                  자전거 대여소와 따릉이 현황을<br />
+                  탐색하고 이용할 수 있어요.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <main class="clearfix">
+          <section id="story">
+            <div id="storyBox">
+              <div id="storyTextBox">
+                <p>
+                  사람들이 더 많은 것을 보고 느끼고 발견할 수 있도록<br />
+                  환경을 변화시키는 이동 기술과 경험을 선보입니다.
+                </p>
+
+                <h2>
+                  도시를 변화시키는<br />
+                  서울시와 따릉이 이야기
+                </h2>
+
+                <p>따릉이 사업소개</p>
+              </div>
+              <article id="storyContentBox">
+                <div id="storyContent1">
+                  <div id="storyImg1">
+                    <img
+                      src="img/story_bg.png"
+                      alt="따릉이 이야기 배경이미지"
+                    />
+                    <img
+                      src="img/story_content1_part1.png"
+                      alt="따릉이이야기 첫번째 이미지"
+                    />
+                    <img
+                      src="img/story_content1_part2.png"
+                      alt="따릉이이야기 첫번째 이미지"
+                    />
+                  </div>
+                  <div id="storyText1">
+                    <h4>건강한 자전거 도시</h4>
+                    <br />
+                    <p>
+                      자전거 이용의 생활화를 통한<br />
+                      시민 건강 증진 실현
+                    </p>
+                  </div>
+                </div>
+                <div id="storyContent2">
+                  <div id="storyImg2">
+                    <img
+                      src="img/story_bg.png"
+                      alt="따릉이 이야기 배경이미지"
+                    />
+                    <img
+                      src="img/story_content2_part1.png"
+                      alt="따릉이이야기 두번째 이미지"
+                    />
+                    <img
+                      src="img/story_content2_part2.png"
+                      alt="따릉이이야기 두번째 이미지"
+                    />
+                  </div>
+                  <div id="storyText2">
+                    <h4>편리한 자전거 도시</h4>
+                    <br />
+                    <p>
+                      곳곳에 배치된 자전거로<br />
+                      이동 편리성 증진 실현
+                    </p>
+                  </div>
+                </div>
+                <div id="storyContent3">
+                  <div id="storyImg3">
+                    <img
+                      src="img/story_bg.png"
+                      alt="따릉이 이야기 배경이미지"
+                    />
+                    <img
+                      src="img/story_content3_part1.png"
+                      alt="따릉이이야기 세번째 이미지"
+                    />
+                    <img
+                      src="img/story_content3_part2.png"
+                      alt="따릉이이야기 세번째 이미지"
+                    />
+                  </div>
+                  <div id="storyText3">
+                    <h4>녹색 성장 선도 도시</h4>
+                    <br />
+                    <p>국가 비전인 <br />'저탄소 녹생성장' 실현</p>
+                  </div>
+                </div>
+                <div id="storyContent4">
+                  <div id="storyImg4">
+                    <img
+                      src="img/story_bg.png"
+                      alt="따릉이 이야기 배경이미지"
+                    />
+                    <img
+                      src="img/story_content4_part1.png"
+                      alt="따릉이이야기 네번째 이미지"
+                    />
+                    <img
+                      src="img/story_content4_part2.png"
+                      alt="따릉이이야기 네번째 이미지"
+                    />
+                  </div>
+                  <div id="storyText4">
+                    <h4>깨끗한 자전거 도시</h4>
+                    <br />
+                    <p>
+                      자전거 교통수단 분담률을<br />
+                      향상시켜 CO2 발생 감소 실현
+                    </p>
+                  </div>
+                </div>
+              </article>
+              <article id="storyContentBox2">
+                <div id="storyTitleBox">
+                  <h3>
+                    더 나은 도시를 위한<br />
+                    따릉이와 서울 시민들의 노력
+                  </h3>
+                </div>
+                <div id="storyImgBox">
+                  <ul>
+                    <li>
+                      <img
+                        src="img/story_content5_earth.png"
+                        alt="따릉이이야기 지구이미지"
+                      />
+                    </li>
+                    <li>
+                      <img
+                        src="img/story_content5_hambuger.png"
+                        alt="따릉이이야기 햄버거이미지"
+                      />
+                    </li>
+                    <li>
+                      <img
+                        src="img/story_content5_car.png"
+                        alt="따릉이이야기 자동차이미지"
+                      />
+                    </li>
+                  </ul>
+                </div>
+                <div id="storyInfoBox">
+                  <div id="earth">
+                    <span id="earthCount"></span>
+                    <span>Km</span>
+                    <p>지구 약 214바퀴</p>
+                  </div>
+                  <div id="hambuger">
+                    <span id="hamCount"></span>
+                    <span>Kcal</span>
+                    <p>햄버거 약 376,175개</p>
+                  </div>
+                  <div id="car">
+                    <span id="carCount"></span>
+                    <span>kg</span>
+                    <p>자동차 약 986대 연간 배출량</p>
+                  </div>
+                </div>
+              </article>
+              <article id="storyContentBox3">
+                <div id="storyTextBox">
+                  <p>
+                    따릉이는 만 13세 이상 자전거 주행이 가능하면 <br />
+                    누구나 이용하실 수 있는 무인대여시스템 공영자전거입니다.
+                  </p>
+
+                  <h2>
+                    사람의 안전과<br />
+                    도시의 환경을 위한 따릉이
+                  </h2>
+
+                  <p>따릉이 소개</p>
+                </div>
+                <div id="storyIntro">
+                  <ul>
+                    <li>
+                      <img
+                        src="img/story_content6_01.png"
+                        alt="따릉이소개 첫번째 이미지"
+                      />
+                      <br />
+                      <h4>따릉이 자전거 : 일반</h4>
+                      <p>
+                        누구나 편리하게 이용할 수 있도록<br />
+                        설계되었으며, 안전과 편의성을<br />
+                        최대한 반영하였습니다.
+                      </p>
+                    </li>
+                    <li>
+                      <img
+                        src="img/story_content6_02.png"
+                        alt="따릉이소개 두번째 이미지"
+                      />
+                      <br />
+                      <h4>따릉이 자전거 : 새싹</h4>
+                      <p>
+                        체구가 작은 사람들도 편리하게<br />
+                        이용할 수 있도록 크기와 무게를 줄인<br />
+                        새로운 따릉이 모델입니다.
+                      </p>
+                    </li>
+                    <li>
+                      <img
+                        src="img/story_content6_03.png"
+                        alt="따릉이소개 세번째 이미지"
+                      />
+                      <br />
+                      <h4>스마트락</h4>
+                      <p>
+                        스마트락은 따릉이의 잠금장치로<br />
+                        QR코드로 스마트폰을 이용한<br />
+                        대여기능을 지원합니다.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </section>
+          <section id="techAndSafe">
+            <div id="techBox">
+              <div id="techTextBox">
+                <p>
+                  작은 힘으로 언덕도 거뜬하게 올라갈 수 있어요.<br />
+                  작은 힘으로 더 멀리, 스마트락으로 더 안전하게 따릉이를
+                  이용해보세요.
+                </p>
+                <p>이용안내</p>
+              </div>
+              <div id="techButton">
+                <ul>
+                  <li><a href="">이용 방법</a></li>
+                  <li><a href="">반납 방법</a></li>
+                </ul>
+              </div>
+              <div id="techImgBox" class="techImgBox">
+                <ul>
+                  <li>
+                    <img
+                      src="img/techAndSafe_content1_01.png"
+                      alt="따릉이 이용방법 첫번째 이미지"
+                    />
+                    <h4>STEP 01.</h4>
+                    <p>
+                      ‘따릉이’앱에서 대여하기 버튼을 <br />
+                      누른 후, QR코드를 스캔해주세요.
+                    </p>
+                  </li>
+                  <li>
+                    <img
+                      src="img/techAndSafe_content1_02.png"
+                      alt="따릉이 이용방법 두번째 이미지"
+                    />
+                    <h4>STEP 02.</h4>
+                    <p>
+                      ‘대여 시작 메시지와 함께 <br />
+                      자전거의 잠금이 해제돼요
+                    </p>
+                  </li>
+                  <li>
+                    <img
+                      src="img/techAndSafe_content1_03.png"
+                      alt="따릉이 이용방법 세번째 이미지"
+                    />
+                    <h4>STEP 03.</h4>
+                    <p>
+                      즐거운 자전거 운행!<br />
+                      안전운행 하세요.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div id="techImgBox2" class="techImgBox">
+              <ul>
+                <li>
+                  <img
+                    src="img/techAndSafe_content2_01.png"
+                    alt="따릉이 반납방법 첫번째 이미지"
+                  />
+                  <h4>STEP 01.</h4>
+                  <p>
+                    가까운 '따릉이 대여소'를<br />
+                    찾아주세요.
+                  </p>
+                </li>
+                <li>
+                  <img
+                    src="img/techAndSafe_content2_02.png"
+                    alt="따릉이 반납방법 두번째 이미지"
+                  />
+                  <h4>STEP 02.</h4>
+                  <p>
+                    자전거 뒷 부분에 있는 잠금장치를 잠근 후<br />
+                    잠시만 기다려주세요.
+                  </p>
+                </li>
+                <li>
+                  <img
+                    src="img/techAndSafe_content2_03.png"
+                    alt="따릉이 반납방법 세번째 이미지"
+                  />
+                  <h4>STEP 03.</h4>
+                  <p>
+                    반납완료 메시지를<br />
+                    “꼭” 확인하시고, 이동하여 주세요.
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div id="safeBox">
+              <div id="safeTextBox">
+                <p>
+                  따릉이는 운전자의 안전과<br />
+                  서울시민들의 안전을 중요시 생각합니다.
+                </p>
+                <p>안전수칙</p>
+              </div>
+              <div id="safeImgBox">
+                <img
+                  class="safeBGImg"
+                  src="img/techAndSafe_content3_01_BG.png"
+                  alt="따릉이 안전수칙 배경 이미지"
+                />
+                <span class="prev"
+                  ><img
+                    src="img/techAndSafe_content3_03_prev.png"
+                    alt="이전 방향 버튼"
+                /></span>
+                <span class="next"
+                  ><img
+                    src="img/techAndSafe_content3_02_next.png"
+                    alt="다음 방향 버튼"
+                /></span>
+                <div id="slide">
+                  <ul>
+                    <li>
+                      <a href=""
+                        ><img
+                          src="img/techAndSafe_content3_03.png"
+                          alt="따릉이 안전수칙 첫번쨰 이미지"
+                      /></a>
+                      <div id="commentBox">
+                        <p>출발 전 점검</p>
+                        <p>
+                          이용전 브레이크, 타이어, 체인. 안장 조임을 꼭
+                          확인하세요.
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <a href=""
+                        ><img
+                          src="img/techAndSafe_content3_04.png"
+                          alt="따릉이 안전수칙 두번쨰 이미지"
+                      /></a>
+                      <div id="commentBox">
+                        <p>안전모 착용</p>
+                        <p>안전한 주행을 위해 주행시 안전모를 착용하세요.</p>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img
+                          src="img/techAndSafe_content3_05.png"
+                          alt="따릉이 안전수칙 세번쨰 이미지"
+                      /></a>
+                      <div id="commentBox">
+                        <p>음주 운전 금지</p>
+                        <p>
+                          자전거도 차와 같이 교통법규를 지켜야 합니다.
+                          <br />음주 후 이용시 도로교통법에 따라 처벌받습니다.
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img
+                          src="img/techAndSafe_content3_06.png"
+                          alt="따릉이 안전수칙 네번쨰 이미지"
+                      /></a>
+                      <div id="commentBox">
+                        <p>자전거도로 이용</p>
+                        <p>
+                          자전거 도로를 이용하고, 없는 경우 차도 우측 가장자리에
+                          붙어서 통행합니다.<br />
+                          이때 2대 이상 나란히 통행하지 않습니다.
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img
+                          src="img/techAndSafe_content3_07.png"
+                          alt="따릉이 안전수칙 다섯번쨰 이미지"
+                      /></a>
+                      <div id="commentBox">
+                        <p>횡단보도 이용시</p>
+                        <p>횡단보도에서는 자전거를 끌고 보행해야 합니다.</p>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img
+                          src="img/techAndSafe_content3_08.png"
+                          alt="따릉이 안전수칙 여섯번쨰 이미지"
+                      /></a>
+
+                      <div id="commentBox">
+                        <p>보행자 배려</p>
+                        <p>
+                          보행자의 통행에 방해가 될 경우 일시정지하고,<br />
+                          보행자 보호를 위해 가속하지 않습니다.
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img
+                          src="img/techAndSafe_content3_09.png"
+                          alt="따릉이 안전수칙 일곱번쨰 이미지"
+                      /></a>
+                      <div id="commentBox">
+                        <p>주행중 기타행위 금지</p>
+                        <p>
+                          주행시 핸들을 놓거나 이어폰, 핸드폰을 사용하지
+                          않습니다.
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <ul class="btn">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+            <div id="blank"></div>
+          </section>
+          <section id="service">
+            <article id="serviceContentBox">
+              <div id="serviceTextBox">
+                <p>
+                  부담없는 비용으로 더 길게, 마음 편히<br />
+                  이동하고 싶을 때는 따릉이를 이용해보세요!
+                </p>
+                <h4>이용권 종류</h4>
+                <div id="ticketBox">
+                  <ul>
+                    <li>
+                      <a href="service_BuyTicket.html"
+                        ><img
+                          src="img/service_content1_01.png"
+                          alt="정기권 구매하기"
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="service_BuyTicket.html"
+                        ><img
+                          src="img/service_content1_02.png"
+                          alt="일일권 구매하기"
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="service_BuyTicket.html"
+                        ><img
+                          src="img/service_content1_03.png"
+                          alt="정기권 선물하기"
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="service_BuyTicket.html"
+                        ><img
+                          src="img/service_content1_04.png"
+                          alt="일일권 선물하기"
+                      /></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+          </section>
+          <section id="newsRoom">
+            <div id="newsRoomShowAndHide">
+              <article id="newsRoomTextBox">
+                <p>
+                  따릉이에 대한 최신 소식을 확인하고 <br />
+                  궁금한 점을 물어보세요!
+                </p>
+                <h4>뉴스룸</h4>
+              </article>
+              <article id="boardBox">
+                <div id="noticeBoard">
+                  <h4>공지사항</h4>
+                  <ul>
+                    <li>
+                      <a href="newsRoom_page.html"
+                        ><div>
+                          <img
+                            src="img/newsRoom_content_01.png"
+                            alt="공지사항 이미지"
+                          />(알림)신탄진고네거리 대여소 이전 알림
+                        </div>
+                        <span>2024-04-15</span></a
+                      >
+                    </li>
+
+                    <li>
+                      <a href="newsRoom_page.html"
+                        ><div>
+                          <img
+                            src="img/newsRoom_content_01.png"
+                            alt="공지사항 이미지"
+                          />(알림)신탄진고네거리 대여소 이전 알림
+                        </div>
+                        <span>2024-04-15</span></a
+                      >
+                    </li>
+
+                    <li>
+                      <a href="newsRoom_page.html"
+                        ><div>
+                          <img
+                            src="img/newsRoom_content_01.png"
+                            alt="공지사항 이미지"
+                          />(알림)신탄진고네거리 대여소 이전 알림
+                        </div>
+                        <span>2024-04-15</span></a
+                      >
+                    </li>
+
+                    <li>
+                      <a href="newsRoom_page.html"
+                        ><div>
+                          <img
+                            src="img/newsRoom_content_01.png"
+                            alt="공지사항 이미지"
+                          />(알림)신탄진고네거리 대여소 이전 알림
+                        </div>
+                        <span>2024-04-15</span></a
+                      >
+                    </li>
+
+                    <li>
+                      <a href="newsRoom_page.html"
+                        ><div>
+                          <img
+                            src="img/newsRoom_content_01.png"
+                            alt="공지사항 이미지"
+                          />(알림)신탄진고네거리 대여소 이전 알림
+                        </div>
+                        <span>2024-04-15</span></a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!--  -->
+                <div id="QNABox">
+                  <h4>문의 / FAQ</h4>
+                  <ul>
+                    <li class="qus">
+                      <a href="#"
+                        ><div>
+                          <img
+                            src="img/newsRoom_content_02.png"
+                            alt="질문 이미지"
+                          />대여소가 무엇인가요?
+                        </div>
+                      </a>
+                    </li>
+                    <div class="anw">
+                      <p>
+                        대여소는 공영자전거 따릉이를 <br />대여하고 반납하는
+                        무인대여소입니다. <br />따릉이 앱에서 대여소의 위치를
+                        확인해보세요.
+                      </p>
+                    </div>
+                    <li class="qus">
+                      <a href="#"
+                        ><div>
+                          <img
+                            src="img/newsRoom_content_02.png"
+                            alt="질문 이미지"
+                          />대여소가 무엇인가요?
+                        </div>
+                      </a>
+                    </li>
+                    <div class="anw">
+                      <p>
+                        대여소는 공영자전거 따릉이를 <br />대여하고 반납하는
+                        무인대여소입니다. <br />따릉이 앱에서 대여소의 위치를
+                        확인해보세요.
+                      </p>
+                    </div>
+                    <li class="qus">
+                      <a href="#"
+                        ><div>
+                          <img
+                            src="img/newsRoom_content_02.png"
+                            alt="질문 이미지"
+                          />대여소가 무엇인가요?
+                        </div>
+                      </a>
+                    </li>
+                    <div class="anw">
+                      <p>
+                        대여소는 공영자전거 따릉이를 <br />대여하고 반납하는
+                        무인대여소입니다. <br />따릉이 앱에서 대여소의 위치를
+                        확인해보세요.
+                      </p>
+                    </div>
+                    <li class="qus">
+                      <a href="질문 이미지"
+                        ><div>
+                          <img
+                            src="img/newsRoom_content_02.png"
+                            alt=""
+                          />대여소가 무엇인가요?
+                        </div>
+                      </a>
+                    </li>
+                    <div class="anw">
+                      <p>
+                        대여소는 공영자전거 따릉이를 <br />대여하고 반납하는
+                        무인대여소입니다. <br />따릉이 앱에서 대여소의 위치를
+                        확인해보세요.
+                      </p>
+                    </div>
+                    <li class="qus">
+                      <a href="질문 이미지"
+                        ><div>
+                          <img
+                            src="img/newsRoom_content_02.png"
+                            alt=""
+                          />대여소가 무엇인가요?
+                        </div>
+                      </a>
+                    </li>
+                    <div class="anw">
+                      <p>
+                        대여소는 공영자전거 따릉이를 <br />대여하고 반납하는
+                        무인대여소입니다. <br />따릉이 앱에서 대여소의 위치를
+                        확인해보세요.
+                      </p>
+                    </div>
+                  </ul>
+                </div>
+              </article>
+            </div>
+
+            <div id="newsRoomDownload">
+              <div>
+                <div id="newsRoomImgBox">
+                  <img src="img/newsRoom_content_04.png" alt="" />
+                  <img class="bike" src="img/newsRoom_content_03.png" alt="" />
+                </div>
+                <div id="newsRoomDownBox">
+                  <div id="newsRoomDownTextBox">
+                    <p>Download for</p>
+
+                    <h4>따릉이 공영자전거</h4>
+
+                    <p>
+                      앱을 다운로드 하고<br />
+                      따릉이 공영자전거를 이용해보세요.
+                    </p>
+                    <div>
+                      <a
+                        href="https://play.google.com/store/games?hl=ko&gl=US"
+                        target="_blank"
+                        ><img src="img/newsRoom_content_06.png" alt=""
+                      /></a>
+                      <a
+                        href="https://www.apple.com/kr/app-store/"
+                        target="_blank"
+                        ><img src="img/newsRoom_content_05.png" alt=""
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="blank2"></div>
+          </section>
+        </main>
+      </section>
+
+      <footer id="footer">
+        <nav id="fnb">
+          <ul>
+            <li><a href="">이용약관</a></li>
+            <li><a href="">위치정보관련 약관</a></li>
+            <li><a href="">개인정보처리방침</a></li>
+            <li><a href="">보험안내</a></li>
+            <li><a href="">도움주신분</a></li>
+          </ul>
+          <div id="iconBox">
+            <a
+              href="https://www.facebook.com/seoulbike/?locale=ko_KR"
+              target="_blank"
+              ><span class="fa-brands fa-facebook"></span
+            ></a>
+            <a href="https://www.instagram.com/oos6uop/" target="_blank"
+              ><span class="fa-brands fa-instagram"></span
+            ></a>
+            <a href="https://www.youtube.com/@seoulbike_" target="_blank"
+              ><span class="fa-brands fa-youtube"></span
+            ></a>
+          </div>
+        </nav>
+        <address id="address">
+          <p>
+            서울특별시 중구 세종대로 110 서울특별시 대표자 오세훈. Tel :
+            1599-0120
+            <a href="">(사업자등록번호 : 104-83-00469)</a> 우편번호 04524
+            <br />
+            COPYRIGHT ⓒ 2018 bikeseoul ALL RIGHTS RESERVED.
+          </p>
+        </address>
+      </footer>
+      <!-- <div class="welcome-section content-hidden">
+        <div class="content-wrap">
+          <ul class="fly-in-text">
+            <li class="li1"><img src="img/intro_content_01.png" alt="" /></li>
+
+            <li class="li2"><img src="img/intro_content_02_1.png" alt="" /></li>
+            <li class="li3"><img src="img/intro_content_03.png" alt="" /></li>
+            <li></li>
+          </ul>
+          >
+        </div>
+        <div id="myText"></div>
+      </div> -->
+    </div>
+
+    <script src="js/style.js"></script>
+    <script src="js/map.js"></script>
+    <!-- <script src="js/intro.js"></script> -->
+  </body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>서울자전거 따릉이</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/6f28eeda7c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="./img/favicon.ico" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/map.css" />
+    <link rel="stylesheet" href="css/login.css" />
+
+    <style>
+      @font-face {
+        font-family: "돋움";
+        src: url(/font/gulim.ttc);
+      }
+
+      @font-face {
+        font-family: "견고딕";
+        src: url(font/H2GTRE.TTF);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap" class="clearfix">
+      <header id="header">
+        <h3 class="hidden">로그인메뉴 바로가기</h3>
+        <div id="gnbBox">
+          <div id="gnb">
+            <ul>
+              <li><a class="loginBtn" href="#">로그인</a></li>
+              <li><a href="#">회원가입</a></li>
+              <li><a href="index.html">따릉이 타기</a></li>
+              <li class="goMap"><a href="">대여소 조회</a></li>
+              <li>
+                <a href=""><span class="fa-solid fa-globe"></span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="lnbBox">
+          <h3 class="hidden">로고 바로가기</h3>
+          <div id="logo">
+            <h1>
+              <a href="main.html">
+                <img
+                  class="logoImg1"
+                  src="img/header_logo.png"
+                  alt="상단 로고"
+                />
+                <img
+                  class="logoImg2"
+                  src="img/hover_logo.png"
+                  alt="상단 로고"
+                />
+              </a>
+            </h1>
+          </div>
+          <nav id="lnb">
+            <h3 class="hidden">메인메뉴 바로가기</h3>
+            <ul>
+              <li>
+                <a href="main.html">저탄소 이동수단</a>
+                <ul class="sub">
+                  <li><a href="main.html">따릉이 이야기</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="main.html">기술과 안전</a>
+                <ul class="sub">
+                  <li><a href="main.html">따릉이 이용 방법</a></li>
+                  <li><a href="main.html">안전수칙</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="main.html">서비스</a>
+                <ul class="sub">
+                  <li><a href="main.html">이용권 구매</a></li>
+                  <li><a href="main.html">대여소 조회</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="main.html">뉴스룸</a>
+                <ul class="sub">
+                  <li><a href="main.html">공지사항</a></li>
+                  <li><a href="main.html">문의/FAQ</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <article id="loginBG">
+          <section id="loginWrap">
+            <form action="">
+              <h4>로그인</h4>
+              <span class="fa-solid fa-xmark logCnCl"></span>
+              <div class="form_group">
+                <label for="id"
+                  >아이디
+                  <input type="text" id="id" />
+                </label>
+              </div>
+              <div class="form_group">
+                <label for="pw"
+                  >비밀번호
+                  <input type="text" id="pw" />
+                </label>
+              </div>
+              <div class="form_group">
+                <button>로그인</button>
+              </div>
+              <div class="menu">
+                <a href="">가입하기</a>
+                <a href="">비밀번호를 잊어버리셨나요?</a>
+              </div>
+            </form>
+          </section>
+        </article>
+      </header>
+      <section id="maper">
+        <article id="searchMap">
+          <p>
+            따릉이 어플을 통해 지도 화면에서 <br />자전거 대여소와 따릉이 현황을
+            탐색하고 이용할 수 있어요.
+          </p>
+          <h4>대여소 조회</h4>
+          <div id="map"></div>
+
+          <div id="mapButton"><a href="main.html">조회그만하기</a></div>
+        </article>
+      </section>
+      <footer id="footer">
+        <nav id="fnb">
+          <ul>
+            <li><a href="">이용약관</a></li>
+            <li><a href="">위치정보관련 약관</a></li>
+            <li><a href="">개인정보처리방침</a></li>
+            <li><a href="">보험안내</a></li>
+            <li><a href="">도움주신분</a></li>
+          </ul>
+          <div id="iconBox">
+            <a href=""><span class="fa-brands fa-facebook"></span></a>
+            <a href=""><span class="fa-brands fa-instagram"></span></a>
+            <a href=""><span class="fa-brands fa-youtube"></span></a>
+          </div>
+        </nav>
+        <address id="address">
+          <p>
+            서울특별시 중구 세종대로 110 서울특별시 대표자 오세훈. Tel :
+            1599-0120
+            <a href="">(사업자등록번호 : 104-83-00469)</a> 우편번호 04524
+            <br />
+            COPYRIGHT ⓒ 2018 bikeseoul ALL RIGHTS RESERVED.
+          </p>
+        </address>
+      </footer>
+    </div>
+    <script
+      type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=db34edd42b36e8b1c566a73f5e7a709c"
+    ></script>
+    <script src="js/map.js"></script>
+  </body>
+</html>

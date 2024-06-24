@@ -241,10 +241,10 @@ img {
 #slide > ul > li > div {
   width: 500px;
   position: absolute;
-  top: 105%;
+  top: -25%;
   left: 50%;
   transform: translateX(-50%);
-  margin-top: 50px;
+  /* margin-top: 50px; */
   text-align: center;
 }
 
@@ -314,10 +314,6 @@ img {
 
 .btn > li.check {
   background-color: #53b77e;
-}
-
-#commentBox {
-  padding: 20px 0;
 }
 
 #blank {
